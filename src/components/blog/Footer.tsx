@@ -15,7 +15,7 @@ const FOOTER_LINKS = [
   "LICENSING",
   "CHANGELOG",
 ]
-import classes from "@/assets/styles/Blog.module.css"
+import classes from "../../assets/styles/Blog.module.css"
 
 export function Footer() {
   return (

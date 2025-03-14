@@ -1,6 +1,6 @@
 import { Stack, Title, Group, Text } from "@mantine/core"
 
-import classes from "@/assets/styles/Blog.module.css"
+import classes from "../../assets/styles/Blog.module.css"
 
 interface LatestNewsItemProps {
   id?: string

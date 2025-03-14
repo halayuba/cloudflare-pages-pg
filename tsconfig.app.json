@@ -23,7 +23,7 @@
     "noUncheckedSideEffectImports": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@utils/*": ["./src/utils/*"]
+      "~utils/*": ["./src/utils/*"]
     }
   },
   "include": ["src"]

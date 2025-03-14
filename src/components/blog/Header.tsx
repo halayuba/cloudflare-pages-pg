@@ -1,7 +1,7 @@
 import { Group, Container, Text } from "@mantine/core"
 import { Search } from "lucide-react"
 
-import classes from "@/assets/styles/Blog.module.css"
+import classes from "../../assets/styles/Blog.module.css"
 
 const HEADER_LINKS = ["ABOUT", "FASHION", "TRAVEL", "DESIGN", "SPORTS"]
 

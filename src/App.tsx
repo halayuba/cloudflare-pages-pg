@@ -1,18 +1,18 @@
 import { Container, Grid, Center } from "@mantine/core"
 
-import { Header } from "@/components/blog/Header"
-import { LatestNews } from "@/components/blog/LatestNews"
-import { TopRated } from "@/components/blog/TopRated"
-import { FeaturedArticle } from "@/components/blog/FeaturedArticle"
-import { TrendingStories } from "@/components/blog/TrendingStories"
-import { Footer } from "@/components/blog/Footer"
+import { Header } from "./components/blog/Header"
+import { LatestNews } from "./components/blog/LatestNews"
+import { TopRated } from "./components/blog/TopRated"
+import { FeaturedArticle } from "./components/blog/FeaturedArticle"
+import { TrendingStories } from "./components/blog/TrendingStories"
+import { Footer } from "./components/blog/Footer"
 
 import {
   LATEST_NEWS,
   TOP_RATED,
   FEATURED_ARTICLE,
   TRENDING_STORIES,
-} from "@/components/blog/data"
+} from "./components/blog/data"
 
 function App() {
   return (

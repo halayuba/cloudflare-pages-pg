@@ -1,7 +1,7 @@
 import { Card, Image, Text, Stack } from "@mantine/core"
-import { Article } from "@/utils/types/article"
+import { Article } from "../../utils/types/article"
 
-import classes from "@/assets/styles/Blog.module.css"
+import classes from "../../assets/styles/Blog.module.css"
 
 interface FeaturedArticleProps {
   article: Article
