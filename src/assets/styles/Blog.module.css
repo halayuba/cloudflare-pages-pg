@@ -1,0 +1,31 @@
+.header {
+  padding: 8px 0;
+  border-bottom: 2px solid #88ffdd;
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-top: 80px;
+}
+
+.icon {
+  cursor: pointer;
+
+  :hover {
+    color: gray;
+  }
+}
+
+.search {
+  cursor: pointer;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.text:hover {
+  color: gray;
+}

@@ -1,33 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Container, Grid, Center } from "@mantine/core"
+
+import { Header } from "@/components/blog/Header"
+import { LatestNews } from "@/components/blog/LatestNews"
+import { TopRated } from "@/components/blog/TopRated"
+import { FeaturedArticle } from "@/components/blog/FeaturedArticle"
+import { TrendingStories } from "@/components/blog/TrendingStories"
+import { Footer } from "@/components/blog/Footer"
+
+import {
+  LATEST_NEWS,
+  TOP_RATED,
+  FEATURED_ARTICLE,
+  TRENDING_STORIES,
+} from "@/components/blog/data"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Center>
+        <Container size='lg' py='lg'>
+          <Grid gutter='xl' mt='lg'>
+            <Grid.Col span={3}>
+              <LatestNews articles={LATEST_NEWS} />
+            </Grid.Col>
+            <Grid.Col span={6}>
+              <FeaturedArticle article={FEATURED_ARTICLE} />
+              <div style={{ marginTop: "2rem" }}>
+                <TrendingStories articles={TRENDING_STORIES} />
+              </div>
+            </Grid.Col>
+            <Grid.Col span={3}>
+              <TopRated articles={TOP_RATED} />
+            </Grid.Col>
+          </Grid>
+        </Container>
+      </Center>
+      <Footer />
     </>
   )
 }
